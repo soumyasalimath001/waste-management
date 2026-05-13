@@ -1,17 +1,27 @@
 """
-Utility Functions Package
-=========================
-Helper functions and utilities for the waste route optimization system.
+Waste Route Optimization Agent - Core Modules Package
+=====================================================
+This package contains the core functionality for the waste route optimization system.
 
 Modules:
-    - osm_helpers: OpenStreetMap integration utilities
+    - data_simulator: Simulates smart bin data
+    - route_optimizer: Optimizes collection routes
+    - visualization: Creates maps and charts
+    - ml_models: Machine learning predictions
 """
 
-from .osm_helpers import OSMDataFetcher, DistanceCalculator
+from .data_simulator import BinDataSimulator
+from .route_optimizer import RouteOptimizer
+from .visualization import MapVisualizer, ChartVisualizer
+from .ml_models import FillLevelPredictor
 
 __all__ = [
-    'OSMDataFetcher',
-    'DistanceCalculator'
+    'BinDataSimulator',
+    'RouteOptimizer', 
+    'MapVisualizer',
+    'ChartVisualizer',
+    'FillLevelPredictor'
 ]
 
 __version__ = '1.0.0'
+__author__ = 'Your Team Name'

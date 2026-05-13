@@ -1,0 +1,31 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Environment variables
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Data files (optional - depending on size)
+data/*.csv
+data/*.json
+!data/sample_*.csv
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# OS specific files
+.DS_Store
+Thumbs.db
